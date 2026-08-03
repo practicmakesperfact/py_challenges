@@ -50,6 +50,24 @@ import numpy as np
 
 #shape 
  
-arr = np.array([[1,2,3,4],[5,6,7,8]])
+# arr = np.array([[1,2,3,4],[5,6,7,8]])
 
-print(arr.shape) 
+# print(arr.shape) 
+#Create an array with 5 dimensions using ndmin using a vector with values 1,2,3,4 and verify that last dimension has value 4:
+
+# arr = np.array([1,2,3,4], ndmin=5)
+# print(arr)
+# print('Shape:', arr.shape)
+# print('Last dimension size:', arr.shape[-1])
+
+# Reshape
+# 1D array to 2D array
+arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+
+new_arr =arr.reshape(4,3) # reshape to 4 rows and 3 columns
+print(new_arr)
+
+print('-------------------')
+#1d to 3d array
+new_ar = arr.reshape(2,3,2) # reshape to 2 arrays of 3 rows and 2 columns
+print(new_ar)
