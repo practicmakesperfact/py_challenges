@@ -62,12 +62,24 @@ import numpy as np
 
 # Reshape
 # 1D array to 2D array
-arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+# arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
 
-new_arr =arr.reshape(4,3) # reshape to 4 rows and 3 columns
-print(new_arr)
+# new_arr =arr.reshape(4,3) # reshape to 4 rows and 3 columns
+# print(new_arr)
+
+# print('-------------------')
+# #1d to 3d array
+# new_ar = arr.reshape(2,3,2) # reshape to 2 arrays of 3 rows and 2 columns
+# print(new_ar)
+
+#itrating
+
+arr = np.array([[1,2,3],[4,5,6]])
+for x in arr:
+   for y in x:
+       print(y)
 
 print('-------------------')
-#1d to 3d array
-new_ar = arr.reshape(2,3,2) # reshape to 2 arrays of 3 rows and 2 columns
-print(new_ar)
+arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+for x in np.nditer(arr):
+    print(x)
