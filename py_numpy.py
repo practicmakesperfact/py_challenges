@@ -30,6 +30,19 @@ import numpy as np
 
 
 # slicing
-arr = np.array([[1,2,3,4],[5,6,7,8]])
+# arr = np.array([[1,2,3,4],[5,6,7,8]])
 
-print(arr[0:2,2])
+# print(arr[0:2,2])
+
+arr = np.array([1,2,3,4,5,6,7,8])
+
+x = arr.copy() # copy of array
+x[0] = 10
+print(arr) # original array remains unchanged   
+print(x) # copy of array is changed
+
+print('-------------------')
+y=arr.view() # view of array
+y[0] = 10
+print(y) # view of array is changed
+print(arr) # original array is also changed because view shares the same data
