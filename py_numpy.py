@@ -74,12 +74,19 @@ import numpy as np
 
 #itrating
 
-arr = np.array([[1,2,3],[4,5,6]])
-for x in arr:
-   for y in x:
-       print(y)
+# arr = np.array([[1,2,3],[4,5,6]])
+# for x in arr:
+#    for y in x:
+#        print(y)
 
-print('-------------------')
-arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
-for x in np.nditer(arr):
-    print(x)
+# print('-------------------')
+# arr = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+# for x in np.nditer(arr):
+#     print(x)
+
+#spliting 
+
+arr = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]])
+
+new_arr = np.hsplit(arr,3) 
+print(new_arr)
