@@ -22,5 +22,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.displot(np.array([0,1,2,3,4,5]), kind="kde")
+
+sns.displot(random.normal(size=1000), kind="kde")
 plt.show()
