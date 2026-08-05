@@ -86,7 +86,19 @@ import numpy as np
 
 #spliting 
 
-arr = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]])
+# arr = np.array([[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]])
 
-new_arr = np.hsplit(arr,3) 
-print(new_arr)
+# new_arr = np.hsplit(arr,3) 
+# print(new_arr)
+
+# arr =np.array([1,2,3,4,5,4,4])
+
+# new_arr = np.where(arr== 4) 
+# print(new_arr)
+
+#sorting
+
+arr = np.array([1,4,5,3,7,2,6])
+
+x =np.sort(arr) # sort the array in ascending order
+print(x)
