@@ -34,5 +34,11 @@ import seaborn as sns
 # sns.displot(data=data, kind="kde")
 # plt.show()
 
-x = random.uniform(low=0.02, high=3, size=(2,3))
-print(x)
+# x = random.uniform(low=0.02, high=3, size=(2,3))
+# print(x)
+
+# sns.displot(random.uniform(size=1000), kind="kde")
+# plt.show()
+data = random.uniform(size=1000)
+sns.displot(data, bins =10)
+plt.show()
