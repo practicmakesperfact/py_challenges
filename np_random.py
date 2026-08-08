@@ -39,6 +39,9 @@ import seaborn as sns
 
 # sns.displot(random.uniform(size=1000), kind="kde")
 # plt.show()
-data = random.uniform(size=1000)
-sns.displot(data, bins =10)
-plt.show()
+# data = random.uniform(size=1000)
+# sns.displot(data, bins =10)
+# plt.show()
+
+x = random.logistic(loc =1,scale=2, size=(2,3))
+print(x)
